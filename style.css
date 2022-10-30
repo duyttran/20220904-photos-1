@@ -8,11 +8,11 @@ darkbox is set here but the positioning on scroll screen happens dynamically in 
     margin:auto;
     left: 5%;
     width:90%;
-    height:90%;
+    height:auto;
     position:absolute;
     background-color:#333; overflow: hidden; text-align:center;
 }
-.darkboximg { padding:5%; width: auto; height: 85%; }
+.darkboximg { padding:5%; width: 85%; height: auto; }
 
 .gallery {
     display: flex;
@@ -20,14 +20,11 @@ darkbox is set here but the positioning on scroll screen happens dynamically in 
 }
 
 .gallery img {
-    width: 50%;
+    width: 33%;
     height: auto;
     outline: 5px solid white;
 }
 
-.gallery img {
-    width: 33%;
-}
 .gallery >:nth-child(2n- 1) {
     order: 1;
 }
@@ -38,4 +35,5 @@ darkbox is set here but the positioning on scroll screen happens dynamically in 
 
 .gallery >:nth-child(-n + 3) {
     break-before: always;
+    page-break-before: always;
 }
