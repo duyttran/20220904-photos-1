@@ -4,7 +4,8 @@ This js manages different supported gallery actions
  - left arrow to go to prev full size image
  - right arrow to go to next full size image
 
-Some tips were taken from https://timnwells.medium.com/enhancing-our-simple-responsive-image-gallery-746549cd2f11
+Some tips were taken from
+https://timnwells.medium.com/enhancing-our-simple-responsive-image-gallery-746549cd2f11
 */
 let darkBoxVisible = false;
 
