@@ -30,10 +30,10 @@ darkbox is set here but the positioning on scroll screen happens dynamically in 
 .gallery img {
     width: 33%;
     height: auto;
-    outline: 5px solid white;
+    outline: 1px solid white;
 }
 
-.gallery >:nth-child(2n- 1) {
+.gallery >:nth-child(3n - 1) {
     order: 1;
 }
 
@@ -43,5 +43,4 @@ darkbox is set here but the positioning on scroll screen happens dynamically in 
 
 .gallery >:nth-child(-n + 3) {
     break-before: always;
-    page-break-before: always;
 }
