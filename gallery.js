@@ -46,18 +46,14 @@ function showDarkbox(url) {
     console.log("darkbox url " + url);
     if(!darkBoxVisible) {
         let y = window.scrollY + 50;
-        let darkboxWidth = window.innerWidth * 0.9;
-        let darkboxImgWidth = window.innerWidth * 0.85;
 
         // Create the darkBox
         var div = document.createElement("div");
         div.id = "darkbox";
         div.innerHTML = '<img class="darkboximg" id="darkboximg" src="'+url+'" />';
         document.body.appendChild(div);
-//        div.style.width = darkboxImgWidth;
         let box = document.getElementById("darkbox");
         box.style.top = y.toString()+"px";
-//        box.style.width = darkboxWidth;
         box.addEventListener('click', (event) => {
             // Remove it
             let element = document.getElementById("darkbox");
