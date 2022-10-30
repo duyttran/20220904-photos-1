@@ -28,7 +28,7 @@ darkbox is set here but the positioning on scroll screen happens dynamically in 
 }
 
 .gallery img {
-    width: 33%;
+    width: 32%;
     height: auto;
     outline: 1px solid white;
 }
