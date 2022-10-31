@@ -34,6 +34,9 @@ function zeroPadNum(num) {
 function prevImageSrc(src) {
     strNum = src.substring(src.length - 7, src.length - 4);
     prevNum = parseInt(strNum) - 1;
+    if (prevNum <= 0) {
+        prevNum = 1
+    }
     return src.substring(0, src.length - 7) + zeroPadNum(prevNum) + src.substring(src.length - 4, src.length);
 }
 
